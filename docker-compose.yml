@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    command: realize start --run --no-config
+    volumes:
+      - ./:/go/app
+    ports:
+      - 1323:1323
